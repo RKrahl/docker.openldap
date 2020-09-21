@@ -1,7 +1,8 @@
 FROM rkrahl/opensuse:15.2
 
 RUN zypper --non-interactive install \
-	openldap2
+	openldap2 \
+	openldap2-client
 
 COPY start-openldap.py /usr/local/lib/start-openldap
 RUN chmod 0755 /usr/local/lib/start-openldap
