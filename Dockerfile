@@ -1,6 +1,7 @@
 FROM rkrahl/opensuse:15.2
 
 RUN zypper --non-interactive install \
+	cyrus-sasl \
 	openldap2 \
 	openldap2-client
 
