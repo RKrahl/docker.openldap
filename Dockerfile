@@ -1,4 +1,4 @@
-FROM rkrahl/opensuse:15.4
+FROM rkrahl/opensuse:15.5
 
 RUN zypper --non-interactive refresh
 
